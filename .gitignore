@@ -1,0 +1,3 @@
+*.env
+pushover_notifier.egg-info
+.env
