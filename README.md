@@ -11,12 +11,22 @@ cd pushover_notifier
 pip install .
 ```
 
+## Setup
+
+To change the `APP_TOKEN` and `USER_KEY` API variables in the Pushover Notifier library, you need to update the `.env` file with your own values. The `.env` file is a hidden file that should be located in the root directory of your project. It contains environment variables that can be accessed by your Python code using the os.environ dictionary.
+
+To update the `.env` file, open it in a text editor and replace the existing values for `POVER_USER_KEY` and `POVER_GENERAL_NOTIFYER_APP_TOKEN` with your own values. Once you've updated the file, save it and restart your Python application. Your application should now be using the new API variables.
+
+If you've moved the `.env` file to a different directory, you'll need to update the path in the Python code to reflect the new location. To do this, open the `pushover_notifier.py` file in a text editor and find the line that calls load_do`.env`(). Update the path in the argument to the new location of the `.env` file. Once you've updated the file, save it and restart your Python application.
+
+--- 
+
 # Usage
 
 To use the `pushover_notifier` library, you first need to create an instance of the `PushoverNotifier` class:
 
 ```python
-from `pushover_notifier` import PushoverNotifier
+from pushover_notifier import PushoverNotifier
 
 notifier = PushoverNotifier()
 ```
