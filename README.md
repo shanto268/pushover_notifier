@@ -48,9 +48,9 @@ Send a text message with a title.
 notifier.send_message_with_title("Hello, world!", "Important Message")
 
 send_message_with_image(message, image)
-Send a text message with an image attachment.
 ```
 
+Send a text message with an image attachment.
 ```python
 notifier.send_message_with_image("Check out this cool picture!", "path/to/image.jpg")
 ```
